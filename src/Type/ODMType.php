@@ -155,4 +155,9 @@ class ODMType extends JsonType
         $type->setEntityClass($entityClass);
         $type->setSerializer($serializer);
     }
+
+    public function requiresSQLCommentHint(AbstractPlatform $platform)
+    {
+        return true;
+    }
 }
